@@ -4,86 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+        <ul class="navbar">
+            <li><a onclick="large1()" id="nav1">Home</a></li>
+            <li><a onclick="large2()" id="nav2">About</a></li>
+            <li><a onclick="large3()" id="nav3">Skills</a></li>
+            <li><a onclick="large4()" id="nav4">Contact</a></li>
+        </ul>
     </nav>
 
-    <div class="hero">
-        <h1>Pawan S Devadiga</h1>
-        <p>Web Developer | Programmer | Tech Enthusiast</p>
-        <p class="profile-desc">Hi I'm Pawan S Devadiga, a beginner web developer who loves building user-friendly wensites. I'm from India and enjoy learning new web technologies</p>
-        <p class="profile-contact"><i class="bi bi-geo-alt"></i> India
+    <div class="container">
+        <section class="bx-zm-out" id="home">
+            <button id="btn1" onclick="close()">Close X</button>
+            <div class="profile">
+                <h1>Hi there👋</h1>
+                <p>My name is Pawan S Devadiga a passianate programmer and web developer who is interested in Modern
+                    Technologies and Artificial Inteligence</p>
+            </div>
+        </section>
+
+        <section class="bx-zm-out" id="about">
+            <button id="btn2" onclick="close()">Close X</button>
+            <div class="profile">
+                <h1>About me</h1>
+                <p>PUC Educations: SDPT College, Kateel</p>
+                <p>Degree Educations: Vijaya College, Mulki</p>
+            </div>
+        </section>
+
+        <section class="bx-zm-out" id="skill">
+            <button id="btn3" onclick="close()">Close X</button>
+            <div class="profile">
+                <h1>Skills</h1>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>C++</p>
+            </div>
+        </section>
+
+        <section class="bx-zm-out" id="contact">
+            <button id="btn4" onclick="close()">Close X</button>
+            <div class="profile">
+                <h1>Contact</h1>
+                <p>📧: pawansdevadiga1@gmail.com</p>
+                <a href="https://www.instagram.com/codepawan_dev/profilecard/?igsh=ZWVldHprYTNoc2R6" target="_blank">📱: @pawansdevadiga</h1>
+            </div>
+        </section>
+    </div>
+    <div class="endPage">
+        <footer class="recBox">Copyright <span class="endPageSpan">&copy;</span>pawansdevadiga 2025</footer>
     </div>
 
-    <div id="about" class="container">
-        <h2 class="section-title">About Me</h2>
-        <p>I'm Pawan S Devadiga, a beginer web developer who enjoys creating simple and user friendly websites. I love
-            learning new technologies and turning ideas into real projects with code.</p>
-    </div>
-
-    <div id="skills" class="container">
-        <h2 class="section-title">Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Responsive Web Design with Bootstrap</li>
-            <li>Programming: C, Python</li>
-        </ul>
-    </div>
-
-    <div id="education" class="container">
-        <h2 class="section-title">Education</h2>
-        <ul>
-            <li>Degree: Vijaya College, Mulki</li>
-            <li>Currently pursuing a degree in Bachelor Computer Science</li>
-        </ul>
-    </div>
-
-    <div id="social" class="container text-center">
-        <h2 class="section-title">Social Media</h2>
-        <div class="social-icons">
-            <a href="https://github.com/codepawan-dev" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/pawan-devadiga-14980129a/" target="_blank"><i
-                    class="bi bi-linkedin"></i></a>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2024 <a href="#">Pawan S Devadiga</a>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
