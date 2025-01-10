@@ -5,66 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a onclick="large1()" id="nav1">Home</a></li>
-            <li><a onclick="large2()" id="nav2">About</a></li>
-            <li><a onclick="large3()" id="nav3">Skills</a></li>
-            <li><a onclick="large4()" id="nav4">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <section class="bx-zm-out" id="home">
-            <button id="btn1" onclick="close()">Close X</button>
-            <div class="profile">
-                <h1 class="blink">Hi there👋</h1>
-                <p>My name is Pawan S Devadiga a passianate programmer and web developer who is interested in Modern
-                    Technologies and Artificial Inteligence</p>
-            </div>
-        </section>
-
-        <section class="bx-zm-out" id="about">
-            <button id="btn2" onclick="close()">Close X</button>
-            <div class="profile">
-                <h1 class="blink">About me</h1>
-                <p>PUC Educations: SDPT College, Kateel</p>
-                <p>Degree Educations: Vijaya College, Mulki</p>
-            </div>
-        </section>
-
-        <section class="bx-zm-out" id="skill">
-            <button id="btn3" onclick="close()">Close X</button>
-            <div class="profile">
-                <h1 class="blink">Skills</h1>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>C++</p>
-            </div>
-        </section>
-
-        <section class="bx-zm-out" id="contact">
-            <button id="btn4" onclick="close()">Close X</button>
-            <div class="profile">
-                <h1 class="blink">Contact</h1>
-                <p>📧: pawansdevadiga1@gmail.com</p>
-                instagram: <a href="https://www.instagram.com/codepawan_dev/profilecard/?igsh=ZWVldHprYTNoc2R6" target="_blank">@pawansdevadiga</a>
-            </div>
-        </section>
+    <div id="loading">
+        <div class="bar" id="lding1"></div>
+        <div class="bar" id="lding2"></div>
+        <div class="bar" id="lding3"></div>
+        <div class="bar" id="lding4"></div>
     </div>
-    <div class="endPage">
-        <footer class="recBox">Copyright <span class="endPageSpan">&copy;</span>pawansdevadiga 2025</footer>
+    <div id="ld-title"></div>
+
+    <div id="disp">
+        <nav>
+            <ul class="navbar">
+                <li><a onclick="large1()" id="nav1">Home</a></li>
+                <li><a onclick="large2()" id="nav2">About</a></li>
+                <li><a onclick="large3()" id="nav3">Skills</a></li>
+                <li><a onclick="large4()" id="nav4">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section class="bx-zm-out" id="home">
+                <button id="btn1" onclick="close()">Close X</button>
+                <div class="profile">
+                    <h1 class="blink">Hi there👋</h1>
+                    <p>My name is Pawan S Devadiga a passianate programmer and web developer who is interested in Modern
+                        Technologies and Artificial Inteligence</p>
+                </div>
+            </section>
+
+            <section class="bx-zm-out" id="about">
+                <button id="btn2" onclick="close()">Close X</button>
+                <div class="profile">
+                    <h1 class="blink">About me</h1>
+                    <p>PUC Educations: SDPT College, Kateel</p>
+                    <p>Degree Educations: Vijaya College, Mulki</p>
+                </div>
+            </section>
+
+            <section class="bx-zm-out" id="skill">
+                <button id="btn3" onclick="close()">Close X</button>
+                <div class="profile">
+                    <h1 class="blink">Skills</h1>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>C++</p>
+                </div>
+            </section>
+
+            <section class="bx-zm-out" id="contact">
+                <button id="btn4" onclick="close()">Close X</button>
+                <div class="profile">
+                    <h1 class="blink">Contact</h1>
+                    <p>📧: pawansdevadiga1@gmail.com</p>
+                    instagram: <a href="https://www.instagram.com/codepawan_dev/profilecard/?igsh=ZWVldHprYTNoc2R6"
+                        target="_blank">@pawansdevadiga</a>
+                </div>
+            </section>
+        </div>
+        <div class="endPage">
+            <footer class="recBox">Copyright <span class="endPageSpan">&copy;</span>pawansdevadiga 2025</footer>
+        </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
