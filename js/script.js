@@ -13,6 +13,36 @@ let nav2 = document.getElementById('nav2');
 let nav3 = document.getElementById('nav3');
 let nav4 = document.getElementById('nav4');
 
+let disp = document.getElementById('disp');
+let loading = document.getElementById('loading');
+
+let lding1 = document.getElementById('lding1');
+let lding2 = document.getElementById('lding2');
+let lding3 = document.getElementById('lding3');
+let lding4 = document.getElementById('lding4');
+let ld_title = document.getElementById('ld-title');
+
+disp.style.display="none";
+ld_title.style.display="block";
+
+ld_title.textContent = 'Loading';
+
+setTimeout('ld_title.textContent = "Loading."', 1000);
+setTimeout('lding1.style.backgroundColor = "white"', 1000);
+setTimeout('lding1.style.border = "4px solid black"', 1000);
+setTimeout('ld_title.textContent = "Loading.."', 2000);
+setTimeout('lding2.style.backgroundColor = "white"', 2000);
+setTimeout('lding2.style.border = "4px solid black"', 2000);
+setTimeout('lding3.style.backgroundColor = "white"', 2000);
+setTimeout('lding3.style.border = "4px solid black"', 2000);
+setTimeout('ld_title.textContent = "Loading..."', 3000);
+setTimeout('lding4.style.backgroundColor = "white"', 3000);
+setTimeout('lding4.style.border = "4px solid black"', 3000);
+setTimeout('loading.style.display="none"', 4000);
+setTimeout('disp.style.display="block"', 4000);
+setTimeout('ld_title.style.display="none"', 4000);
+
+
 function large1() {
     btn1.style.display = 'block';
     about.style.display = 'none';
