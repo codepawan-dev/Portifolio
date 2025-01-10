@@ -45,11 +45,11 @@ body {
     text-align: center;
     transition: .6s;
     box-shadow: var(--bx-shdw);
-    cursor: pointer;
 }
 
 .navbar li a:hover {
     box-shadow: var(--bx-shdw-re);
+    transform: scale(1.04);
 }
 
 
