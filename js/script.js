@@ -27,15 +27,15 @@ ld_title.style.display="block";
 
 ld_title.textContent = 'Loading';
 
-setTimeout('ld_title.textContent = "Loading."', 1000);
+setTimeout('ld_title.textContent = "Loading•.."', 1000);
 setTimeout('lding1.style.backgroundColor = "white"', 1000);
 setTimeout('lding1.style.border = "4px solid black"', 1000);
-setTimeout('ld_title.textContent = "Loading.."', 2000);
+setTimeout('ld_title.textContent = "Loading••."', 2000);
 setTimeout('lding2.style.backgroundColor = "white"', 2000);
 setTimeout('lding2.style.border = "4px solid black"', 2000);
 setTimeout('lding3.style.backgroundColor = "white"', 2000);
 setTimeout('lding3.style.border = "4px solid black"', 2000);
-setTimeout('ld_title.textContent = "Loading..."', 3000);
+setTimeout('ld_title.textContent = "Loading•••"', 3000);
 setTimeout('lding4.style.backgroundColor = "white"', 3000);
 setTimeout('lding4.style.border = "4px solid black"', 3000);
 setTimeout('loading.style.display="none"', 4000);
