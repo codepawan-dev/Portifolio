@@ -46,6 +46,7 @@ body {
     text-align: center;
     transition: .6s;
     box-shadow: var(--bx-shdw);
+    cursor: pointer;
 }
 
 .navbar li a:hover {
