@@ -17,7 +17,10 @@ html {
     --bx-shdw: -8px 8px 0px white;
     --bx-shdw-b: -8px 8px 0px black;
     --bx-shdw-re: -2px 2px 0px white;
-    --crd-hgt: 280px;
+    --crd-w: 684px;
+    --crd-h: 280px;
+    --crd-w-m: 258px;
+    --crd-h-m: 280px;
     --crd-bg: rgb(48, 34, 54);
 }
 
@@ -47,7 +50,6 @@ body {
     text-align: center;
     transition: .6s;
     box-shadow: var(--bx-shdw);
-    cursor: pointer;
 }
 
 .navbar li a:hover {
@@ -57,19 +59,24 @@ body {
 
 
 .container {
-    display: flex;
+    display: none;
     justify-content: center;
     margin: 12px 12px;
     flex-wrap: wrap;
 }
 
-#home {
+.card {
     border: var(--br);
-    width: 684px;
-    height: var(--crd-hgt);
+    width: var(--crd-w);
+    height: var(--crd-h);
     margin: 20px 20px;
     background-color: var(--crd-bg);
     color: white;
+}
+
+.card-z {
+    width: 684px;
+    height: 280px;
 }
 
 .profile {
@@ -77,32 +84,28 @@ body {
     font-size: 20px;
 }
 
-#about {
+.follow {
+    display: flex;
+    text-align: center;
+    width: 200px;
+    height: 50px;
     border: var(--br);
-    width: 684px;
-    height: var(--crd-hgt);
-    margin: 20px 20px;
-    background-color: var(--crd-bg);
-    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--bx-shdw);
+    transition: .2s;
+    margin: auto;
 }
 
-
-#skill {
-    border: var(--br);
-    width: 684px;
-    height: var(--crd-hgt);
-    margin: 20px 20px;
+.follow a {
+    text-decoration: none;
     color: white;
-    background-color: var(--crd-bg);
+    font-size: 25px;
 }
 
-#contact {
-    border: var(--br);
-    width: 684px;
-    height: var(--crd-hgt);
-    color: white;
-    margin: 20px 20px;
-    background-color: var(--crd-bg);
+.follow:hover {
+    box-shadow: var(--bx-shdw-re);
+    transform: scale(1.2);
 }
 
 .bx-zm-out {
@@ -194,10 +197,41 @@ body {
     border: 4px solid black;
 }
 
+#hours,
+#minutes,
+#isto {
+    color: white;
+    font-size: 40px;
+}
+
+#isto {
+    color: white;
+    animation: time_animation 1s infinite;
+}
+
+.timeDiv {
+    text-align: center;
+}
+
+@keyframes time_animation {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
 @keyframes blinking {
     from {
         color: white;
     }
+
     to {
         color: rgb(48, 34, 54);
     }
@@ -212,7 +246,7 @@ body {
     }
 
     .navbar li a {
-        width: auto;
+        width: 108px;
         font-size: 16px;
         font-weight: 900;
     }
@@ -250,7 +284,7 @@ body {
     }
 
     .navbar li a {
-        width: 98px;
+        width: 108px;
         font-size: 16px;
         font-weight: 900;
     }
