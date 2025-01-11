@@ -23,15 +23,19 @@
     <div id="disp">
         <nav>
             <ul class="navbar">
-                <li><a onclick="large1()" id="nav1">Home</a></li>
-                <li><a onclick="large2()" id="nav2">About</a></li>
-                <li><a onclick="large3()" id="nav3">Skills</a></li>
-                <li><a onclick="large4()" id="nav4">Contact</a></li>
+                <li><a id="nav1">Home</a></li>
+                <li><a id="nav2">About</a></li>
+                <li><a id="nav3">Skills</a></li>
+                <li><a id="nav4">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="container">
-            <section class="bx-zm-out" id="home">
+        <div class="timeDiv">
+            <span><span id="hours"></span><span id="isto">:</span><span id="minutes"></span></span>
+        </div>
+        
+        <div id="cont" class="container">
+            <section class="bx-zm-out card" id="home">
                 <button id="btn1" onclick="close()">Close X</button>
                 <div class="profile">
                     <h1 class="blink">Hi there👋</h1>
@@ -40,7 +44,7 @@
                 </div>
             </section>
 
-            <section class="bx-zm-out" id="about">
+            <section class="bx-zm-out card" id="about">
                 <button id="btn2" onclick="close()">Close X</button>
                 <div class="profile">
                     <h1 class="blink">About me</h1>
@@ -49,18 +53,15 @@
                 </div>
             </section>
 
-            <section class="bx-zm-out" id="skill">
+            <section class="bx-zm-out card" id="skill">
                 <button id="btn3" onclick="close()">Close X</button>
                 <div class="profile">
                     <h1 class="blink">Skills</h1>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>C++</p>
+                    <h1>#HTML #CSS #JS #C++</h1>
                 </div>
             </section>
 
-            <section class="bx-zm-out" id="contact">
+            <section class="bx-zm-out card" id="contact">
                 <button id="btn4" onclick="close()">Close X</button>
                 <div class="profile">
                     <h1 class="blink">Contact</h1>
@@ -70,6 +71,10 @@
                 </div>
             </section>
         </div>
+        <div class="follow">
+            <a href="https://www.instagram.com/codepawan_dev/profilecard/?igsh=ZWVldHprYTNoc2R6">Follow ❤</a>
+        </div>
+
     </div>
 
     <script src="js/script.js"></script>
