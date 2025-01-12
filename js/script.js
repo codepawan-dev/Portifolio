@@ -43,6 +43,10 @@ setTimeout('cont.style.display="flex"', 1000);
 
 nav1.addEventListener('click', function run() {
     btn1.style.display = 'block';
+    setTimeout('btn1.style.color = "white"', 100);
+    setTimeout('btn1.style.backgroundColor = "black"', 100);
+    setTimeout('btn1.style.color = "black"', 200);
+    setTimeout('btn1.style.backgroundColor = "white"', 200);
     about.style.display = 'none';
     skill.style.display = 'none';
     contact.style.display = 'none';
@@ -57,6 +61,10 @@ nav2.addEventListener('click', function run() {
     home.style.display = 'none';
     skill.style.display = 'none';
     contact.style.display = 'none';
+    setTimeout('btn2.style.color = "white"', 100);
+    setTimeout('btn2.style.backgroundColor = "black"', 100);
+    setTimeout('btn2.style.color = "black"', 200);
+    setTimeout('btn2.style.backgroundColor = "white"', 200);
 
     nav1.style.display = 'none';
     nav3.style.display = 'none';
@@ -68,6 +76,10 @@ nav3.addEventListener('click', function run() {
     home.style.display = 'none';
     about.style.display = 'none';
     contact.style.display = 'none';
+    setTimeout('btn3.style.color = "white"', 100);
+    setTimeout('btn3.style.backgroundColor = "black"', 100);
+    setTimeout('btn3.style.color = "black"', 200);
+    setTimeout('btn3.style.backgroundColor = "white"', 200);
 
     nav1.style.display = 'none';
     nav2.style.display = 'none';
@@ -79,6 +91,10 @@ nav4.addEventListener('click', function large4() {
     home.style.display = 'none';
     about.style.display = 'none';
     skill.style.display = 'none';
+    setTimeout('btn4.style.color = "white"', 100);
+    setTimeout('btn4.style.backgroundColor = "black"', 100);
+    setTimeout('btn4.style.color = "black"', 200);
+    setTimeout('btn4.style.backgroundColor = "white"', 200);
 
     nav1.style.display = 'none';
     nav2.style.display = 'none';
@@ -139,16 +155,12 @@ btn4.addEventListener('click', function run() {
 
 
 // Date 
-let hours = document.getElementById('hours');
-let minutes = document.getElementById('minutes');
-let timings = new Date();
-let hour = timings.getHours();
-let minute = timings.getMinutes();
-let hours_minutes = `${hour}${minutes}`;
-
 function updateTime() {
-    hours.textContent = hour;
-    minutes.textContent = minute;
+    timings = new Date();
+    hours = timings.getHours();
+    minutes = timings.getMinutes();
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
 }
 
 setInterval(updateTime, 1000);
