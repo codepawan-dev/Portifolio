@@ -1,14 +1,10 @@
+// Dont try to other people's code .It's too hard to figure out.
+
 let home = document.getElementById('home')
 let about = document.getElementById('about');
 let skill = document.getElementById('skill');
 let contact = document.getElementById('contact');
 let cont = document.getElementById('cont');
-
-// Buttons
-let btn1 = document.getElementById('btn1');
-let btn2 = document.getElementById('btn2');
-let btn3 = document.getElementById('btn3');
-let btn4 = document.getElementById('btn4');
 
 // Navbars
 let nav1 = document.getElementById('nav1');
@@ -24,11 +20,16 @@ let loading = document.getElementById('loading');
 let ld_title = document.getElementById('ld-title');
 let ld_bg = document.getElementById('ld-bg');
 
+// close button
+let closeButton = document.getElementById('closeButton');
+
 
 disp.style.display = "none";
 ld_title.style.display = "block";
 ld_bg.style.display = "block";
 ld_title.textContent = 'Loading';
+
+
 
 setTimeout('ld_title.textContent = "Loading"', 1000);
 setTimeout('ld_title.textContent = "•.."', 700);
@@ -42,29 +43,40 @@ setTimeout('cont.style.display="flex"', 1000);
 
 
 nav1.addEventListener('click', function run() {
-    btn1.style.display = 'block';
-    setTimeout('btn1.style.color = "white"', 100);
-    setTimeout('btn1.style.backgroundColor = "black"', 100);
-    setTimeout('btn1.style.color = "black"', 200);
-    setTimeout('btn1.style.backgroundColor = "white"', 200);
+    setTimeout('closeButton.style.color = "black"', 100);
+    setTimeout('closeButton.style.backgroundColor = "white"', 100);
+    setTimeout('closeButton.style.color = "white"', 200);
+    setTimeout('closeButton.style.backgroundColor = "black"', 200);
     about.style.display = 'none';
     skill.style.display = 'none';
     contact.style.display = 'none';
     nav2.style.display = 'none';
     nav3.style.display = 'none';
     nav4.style.display = 'none';
-    document.querySelector('.card').classList.toggle('dark');
+    closeButton.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function run() {
+    home.style.display = 'block';
+    about.style.display = 'block';
+    skill.style.display = 'block';
+    contact.style.display = 'block';
+    closeButton.style.display = 'none';
+    nav1.style.display = 'flex';
+    nav2.style.display = 'flex';
+    nav3.style.display = 'flex';
+    nav4.style.display = 'flex';
 });
 
 nav2.addEventListener('click', function run() {
-    btn2.style.display = 'block';
+    closeButton.style.display = 'block';
     home.style.display = 'none';
     skill.style.display = 'none';
     contact.style.display = 'none';
-    setTimeout('btn2.style.color = "white"', 100);
-    setTimeout('btn2.style.backgroundColor = "black"', 100);
-    setTimeout('btn2.style.color = "black"', 200);
-    setTimeout('btn2.style.backgroundColor = "white"', 200);
+    setTimeout('closeButton.style.color = "black"', 100);
+    setTimeout('closeButton.style.backgroundColor = "white"', 100);
+    setTimeout('closeButton.style.color = "white"', 200);
+    setTimeout('closeButton.style.backgroundColor = "black"', 200);
 
     nav1.style.display = 'none';
     nav3.style.display = 'none';
@@ -72,95 +84,44 @@ nav2.addEventListener('click', function run() {
 });
 
 nav3.addEventListener('click', function run() {
-    btn3.style.display = 'block';
+    closeButton.style.display = 'block';
     home.style.display = 'none';
     about.style.display = 'none';
     contact.style.display = 'none';
-    setTimeout('btn3.style.color = "white"', 100);
-    setTimeout('btn3.style.backgroundColor = "black"', 100);
-    setTimeout('btn3.style.color = "black"', 200);
-    setTimeout('btn3.style.backgroundColor = "white"', 200);
+    setTimeout('closeButton.style.color = "black"', 100);
+    setTimeout('closeButton.style.backgroundColor = "white"', 100);
+    setTimeout('closeButton.style.color = "white"', 200);
+    setTimeout('closeButton.style.backgroundColor = "black"', 200);
 
     nav1.style.display = 'none';
     nav2.style.display = 'none';
     nav4.style.display = 'none';
 });
 
-nav4.addEventListener('click', function large4() {
-    btn4.style.display = 'block';
+nav4.addEventListener('click', function run() {
+    closeButton.style.display = 'block';
     home.style.display = 'none';
     about.style.display = 'none';
     skill.style.display = 'none';
-    setTimeout('btn4.style.color = "white"', 100);
-    setTimeout('btn4.style.backgroundColor = "black"', 100);
-    setTimeout('btn4.style.color = "black"', 200);
-    setTimeout('btn4.style.backgroundColor = "white"', 200);
+    setTimeout('closeButton.style.color = "black"', 100);
+    setTimeout('closeButton.style.backgroundColor = "white"', 100);
+    setTimeout('closeButton.style.color = "white"', 200);
+    setTimeout('closeButton.style.backgroundColor = "black"', 200);
 
     nav1.style.display = 'none';
     nav2.style.display = 'none';
     nav3.style.display = 'none';
 });
 
-btn1.addEventListener('click', function run() {
-    home.style.width = '684px';
-    home.style.height = '280px';
-    btn1.style.display = 'none';
-    about.style.display = 'block';
-    skill.style.display = 'block';
-    contact.style.display = 'block';
-    nav1.style.display = 'flex';
-    nav2.style.display = 'flex';
-    nav3.style.display = 'flex';
-    nav4.style.display = 'flex';
-});
-
-btn2.addEventListener('click', function run() {
-    about.style.width = '684px';
-    about.style.height = '280px';
-    btn2.style.display = 'none';
-    home.style.display = 'block';
-    skill.style.display = 'block';
-    contact.style.display = 'block';
-    nav1.style.display = 'flex';
-    nav2.style.display = 'flex';
-    nav3.style.display = 'flex';
-    nav4.style.display = 'flex';
-});
-
-btn3.addEventListener('click', function run() {
-    skill.style.width = '684px';
-    skill.style.height = '280px';
-    btn3.style.display = 'none';
-    home.style.display = 'block';
-    about.style.display = 'block';
-    contact.style.display = 'block';
-    nav1.style.display = 'flex';
-    nav2.style.display = 'flex';
-    nav3.style.display = 'flex';
-    nav4.style.display = 'flex';
-});
-
-btn4.addEventListener('click', function run() {
-    contact.style.width = '684px';
-    contact.style.height = '280px';
-    btn4.style.display = 'none';
-    home.style.display = 'block';
-    about.style.display = 'block';
-    skill.style.display = 'block';
-    nav1.style.display = 'flex';
-    nav2.style.display = 'flex';
-    nav3.style.display = 'flex';
-    nav4.style.display = 'flex';
-});
-
-
 // Date 
 function updateTime() {
     timings = new Date();
     hours = timings.getHours();
     minutes = timings.getMinutes();
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('minutes').innerHTML = minutes;
+    seconds = timings.getSeconds();
+    dt = `${hours}:${minutes}`;
+    console.log(dt);
+    document.getElementById('display_time').innerHTML = dt;
 }
 
 setInterval(updateTime, 1000);
