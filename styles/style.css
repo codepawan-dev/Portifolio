@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 :root {
     --br: 4px solid white;
     --bx-shdw: -8px 8px 0px white;
@@ -158,17 +157,6 @@ body {
     cursor: pointer;
 }
 
-.endPage {
-    display: flex;
-    justify-content: center;
-    color: whitesmoke;
-}
-
-.endPageSpan {
-    font-family: "Ubuntu";
-    color: whitesmoke;
-}
-
 .blink {
     color: rgb(48, 34, 54);
     animation: 0.2s blinking linear infinite;
@@ -184,6 +172,13 @@ body {
 }
 
 #ld-title {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+#ld-bg {
     display: none;
     background-color: #362449;
     text-align: center;
