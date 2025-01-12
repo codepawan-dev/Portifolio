@@ -21,32 +21,24 @@ let disp = document.getElementById('disp');
 let loading = document.getElementById('loading');
 
 // loading screen
-let lding1 = document.getElementById('lding1');
-let lding2 = document.getElementById('lding2');
-let lding3 = document.getElementById('lding3');
-let lding4 = document.getElementById('lding4');
 let ld_title = document.getElementById('ld-title');
+let ld_bg = document.getElementById('ld-bg');
 
 
 disp.style.display = "none";
 ld_title.style.display = "block";
+ld_bg.style.display = "block";
 ld_title.textContent = 'Loading';
 
-setTimeout('ld_title.textContent = "Loading•.."', 1000);
-setTimeout('lding1.style.backgroundColor = "white"', 1000);
-setTimeout('lding1.style.border = "4px solid black"', 1000);
-setTimeout('ld_title.textContent = "Loading••."', 2000);
-setTimeout('lding2.style.backgroundColor = "white"', 2000);
-setTimeout('lding2.style.border = "4px solid black"', 2000);
-setTimeout('lding3.style.backgroundColor = "white"', 2000);
-setTimeout('lding3.style.border = "4px solid black"', 2000);
-setTimeout('ld_title.textContent = "Done•••"', 3000);
-setTimeout('lding4.style.backgroundColor = "white"', 3000);
-setTimeout('lding4.style.border = "4px solid black"', 3000);
-setTimeout('loading.style.display="none"', 4000);
-setTimeout('disp.style.display="block"', 4000);
-setTimeout('ld_title.style.display="none"', 4000);
-setTimeout('cont.style.display="flex"', 4000);
+setTimeout('ld_title.textContent = "Loading"', 1000);
+setTimeout('ld_title.textContent = "•.."', 700);
+setTimeout('ld_title.textContent = "••."', 800);
+setTimeout('ld_title.textContent = "•••"', 900);
+setTimeout('loading.style.display="none"', 1000);
+setTimeout('disp.style.display="block"', 1000);
+setTimeout('ld_title.style.display="none"', 1000);
+setTimeout('ld_bg.style.display="none"', 1000);
+setTimeout('cont.style.display="flex"', 1000);
 
 
 nav1.addEventListener('click', function run() {
