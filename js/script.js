@@ -62,10 +62,10 @@ closeButton.addEventListener('click', function run() {
     skill.style.display = 'block';
     contact.style.display = 'block';
     closeButton.style.display = 'none';
-    nav1.style.display = 'flex';
-    nav2.style.display = 'flex';
-    nav3.style.display = 'flex';
-    nav4.style.display = 'flex';
+    nav1.style.display = 'block';
+    nav2.style.display = 'block';
+    nav3.style.display = 'block';
+    nav4.style.display = 'block';
 });
 
 nav2.addEventListener('click', function run() {
