@@ -30,6 +30,7 @@ ld_bg.style.display = "block";
 ld_title.textContent = 'Loading';
 
 
+// Loading screen timeout
 
 setTimeout('ld_title.textContent = "Loading"', 1000);
 setTimeout('ld_title.textContent = "•.."', 700);
@@ -42,21 +43,95 @@ setTimeout('ld_bg.style.display="none"', 1000);
 setTimeout('cont.style.display="flex"', 1000);
 
 
-nav1.addEventListener('click', function run() {
-    setTimeout('closeButton.style.color = "black"', 100);
-    setTimeout('closeButton.style.backgroundColor = "white"', 100);
-    setTimeout('closeButton.style.color = "white"', 200);
-    setTimeout('closeButton.style.backgroundColor = "black"', 200);
-    about.style.display = 'none';
-    skill.style.display = 'none';
-    contact.style.display = 'none';
-    nav2.style.display = 'none';
-    nav3.style.display = 'none';
-    nav4.style.display = 'none';
-    closeButton.style.display = 'block';
+nav1.addEventListener('click', () => {
+    document.body.addEventListener('click', () => {
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "white";
+        }, 100);
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "black";
+        }, 200);
+    })
+
+    const cards = ["about", "skill", "contact"];
+    cards.forEach(cd => {
+        document.getElementById(cd).style.display = 'none';
+    })
+
+    const navs = ["nav1", "nav2", "nav3", "nav4"];
+    navs.forEach(nv => {
+        document.getElementById(nv).style.display = 'none';
+    })
+    closeButton.style.display = 'flex';
 });
 
-closeButton.addEventListener('click', function run() {
+nav2.addEventListener('click', () => {
+    document.body.addEventListener('click', () => {
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "white";
+        }, 100);
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "black";
+        }, 200);
+    })
+
+    const cards = ["home", "skill", "contact"];
+    cards.forEach(cd => {
+        document.getElementById(cd).style.display = 'none';
+    })
+
+    const navs = ["nav1", "nav2", "nav3", "nav4"];
+    navs.forEach(nv => {
+        document.getElementById(nv).style.display = 'none';
+    })
+    closeButton.style.display = 'flex';
+});
+
+nav3.addEventListener('click', () => {
+    document.body.addEventListener('click', () => {
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "white";
+        }, 100);
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "black";
+        }, 200);
+    })
+
+    const cards = ["home", "about", "contact"];
+    cards.forEach(cd => {
+        document.getElementById(cd).style.display = 'none';
+    })
+
+    const navs = ["nav1", "nav2", "nav3", "nav4"];
+    navs.forEach(nv => {
+        document.getElementById(nv).style.display = 'none';
+    })
+    closeButton.style.display = 'flex';
+});
+
+nav4.addEventListener('click', () => {
+    document.body.addEventListener('click', () => {
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "white";
+        }, 100);
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "black";
+        }, 200);
+    })
+
+    const cards = ["home", "about", "skill"];
+    cards.forEach(cd => {
+        document.getElementById(cd).style.display = 'none';
+    })
+
+    const navs = ["nav1", "nav2", "nav3", "nav4"];
+    navs.forEach(nv => {
+        document.getElementById(nv).style.display = 'none';
+    })
+    closeButton.style.display = 'flex';
+});
+
+closeButton.addEventListener('click', () => {
     home.style.display = 'block';
     about.style.display = 'block';
     skill.style.display = 'block';
@@ -68,53 +143,8 @@ closeButton.addEventListener('click', function run() {
     nav4.style.display = 'block';
 });
 
-nav2.addEventListener('click', function run() {
-    closeButton.style.display = 'block';
-    home.style.display = 'none';
-    skill.style.display = 'none';
-    contact.style.display = 'none';
-    setTimeout('closeButton.style.color = "black"', 100);
-    setTimeout('closeButton.style.backgroundColor = "white"', 100);
-    setTimeout('closeButton.style.color = "white"', 200);
-    setTimeout('closeButton.style.backgroundColor = "black"', 200);
-
-    nav1.style.display = 'none';
-    nav3.style.display = 'none';
-    nav4.style.display = 'none';
-});
-
-nav3.addEventListener('click', function run() {
-    closeButton.style.display = 'block';
-    home.style.display = 'none';
-    about.style.display = 'none';
-    contact.style.display = 'none';
-    setTimeout('closeButton.style.color = "black"', 100);
-    setTimeout('closeButton.style.backgroundColor = "white"', 100);
-    setTimeout('closeButton.style.color = "white"', 200);
-    setTimeout('closeButton.style.backgroundColor = "black"', 200);
-
-    nav1.style.display = 'none';
-    nav2.style.display = 'none';
-    nav4.style.display = 'none';
-});
-
-nav4.addEventListener('click', function run() {
-    closeButton.style.display = 'block';
-    home.style.display = 'none';
-    about.style.display = 'none';
-    skill.style.display = 'none';
-    setTimeout('closeButton.style.color = "black"', 100);
-    setTimeout('closeButton.style.backgroundColor = "white"', 100);
-    setTimeout('closeButton.style.color = "white"', 200);
-    setTimeout('closeButton.style.backgroundColor = "black"', 200);
-
-    nav1.style.display = 'none';
-    nav2.style.display = 'none';
-    nav3.style.display = 'none';
-});
-
 // Date 
-function updateTime() {
+let updateTime = () => {
     timings = new Date();
     hours = timings.getHours();
     minutes = timings.getMinutes();
