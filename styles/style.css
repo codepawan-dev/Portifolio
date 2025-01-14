@@ -85,7 +85,7 @@ body {
     height: 50vh;
 }
 
-
+/* time */
 .timeDiv {
     text-align: center;
     margin: 20px;
@@ -96,7 +96,7 @@ body {
     font-size: 40px;
 }
 
-
+/* section layout */
 .container {
     display: none;
     justify-content: center;
@@ -123,6 +123,7 @@ body {
     text-decoration: none;
 }
 
+/* close button */
 .clsBtn {
     display: flex;
     text-align: center;
@@ -134,7 +135,6 @@ body {
     box-shadow: var(--bx-shdw);
     transition: .2s;
     margin: auto;
-    display: none;
     cursor: pointer;
 }
 
@@ -143,14 +143,12 @@ body {
     font-size: 25px;
 }
 
-.disNone {
-    display: none;
-}
-
 .clsBtn:hover {
     box-shadow: var(--bx-shdw-re);
     transform: scale(1.06);
 }
+
+/* effects */
 
 .bx-zm-out {
     box-shadow: var(--bx-shdw);
@@ -169,6 +167,7 @@ body {
 
 
 
+/* Animations */
 @keyframes blinking {
     from {
         color: white;
@@ -178,6 +177,8 @@ body {
         color: rgb(48, 34, 54);
     }
 }
+
+/* For responsive in mobile */
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .navbar {
