@@ -150,7 +150,6 @@ let updateTime = () => {
     minutes = timings.getMinutes();
     seconds = timings.getSeconds();
     dt = `${hours}:${minutes}`;
-    console.log(dt);
     document.getElementById('display_time').innerHTML = dt;
 }
 
