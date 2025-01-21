@@ -29,6 +29,17 @@ ld_title.style.display = "block";
 ld_bg.style.display = "block";
 ld_title.textContent = 'Loading';
 
+function blinks() {
+    document.body.addEventListener('click', () => {
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "white";
+        }, 100);
+        setTimeout(() => {
+            closeButton.style.backgroundColor = "black";
+        }, 200);
+    })
+}
+
 
 // Loading screen timeout
 
@@ -44,15 +55,7 @@ setTimeout('cont.style.display="flex"', 1000);
 
 
 nav1.addEventListener('click', () => {
-    document.body.addEventListener('click', () => {
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "white";
-        }, 100);
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "black";
-        }, 200);
-    })
-
+    setInterval(blinks, 1000);
     const cards = ["about", "skill", "contact"];
     cards.forEach(cd => {
         document.getElementById(cd).style.display = 'none';
@@ -66,15 +69,7 @@ nav1.addEventListener('click', () => {
 });
 
 nav2.addEventListener('click', () => {
-    document.body.addEventListener('click', () => {
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "white";
-        }, 100);
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "black";
-        }, 200);
-    })
-
+    setInterval(blinks, 1000);
     const cards = ["home", "skill", "contact"];
     cards.forEach(cd => {
         document.getElementById(cd).style.display = 'none';
@@ -88,15 +83,7 @@ nav2.addEventListener('click', () => {
 });
 
 nav3.addEventListener('click', () => {
-    document.body.addEventListener('click', () => {
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "white";
-        }, 100);
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "black";
-        }, 200);
-    })
-
+    setInterval(blinks, 1000);
     const cards = ["home", "about", "contact"];
     cards.forEach(cd => {
         document.getElementById(cd).style.display = 'none';
@@ -110,15 +97,7 @@ nav3.addEventListener('click', () => {
 });
 
 nav4.addEventListener('click', () => {
-    document.body.addEventListener('click', () => {
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "white";
-        }, 100);
-        setTimeout(() => {
-            closeButton.style.backgroundColor = "black";
-        }, 200);
-    })
-
+    setInterval(blinks, 1000);
     const cards = ["home", "about", "skill"];
     cards.forEach(cd => {
         document.getElementById(cd).style.display = 'none';
