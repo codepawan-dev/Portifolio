@@ -149,6 +149,19 @@ let updateTime = () => {
     hours = timings.getHours();
     minutes = timings.getMinutes();
     seconds = timings.getSeconds();
+
+    if(hours < 10) {
+        hours = "0" + hours;
+    }
+
+    if(minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if(seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    
     dt = `${hours}:${minutes}`;
     document.getElementById('display_time').innerHTML = dt;
 }
